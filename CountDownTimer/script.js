@@ -18,14 +18,11 @@ function countdown() {
 
     daysEl.innerHTML = days;
     hoursEl.innerHTML = hours;
-    minEl.innerHTML = formalTime(min);
-    secEl.innerHTML = formalTime(sec);
+    minEl.innerHTML = min;
+    secEl.innerHTML = sec;
 
 }
 
-function formalTime(time) {
-    return time < 10 ? '0${time}' : time;
-}
 
 countdown();
 
